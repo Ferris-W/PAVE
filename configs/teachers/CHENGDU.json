@@ -1,0 +1,25 @@
+{
+  "max_epochs": 400,
+  "min_epochs": 200,
+  "early_stop": 80,
+  "min_delta": 0.0001,
+  "batch_size": 16,
+  "model_args": {
+    "model_dim": 96,
+    "num_heads": 4,
+    "num_layers": 2,
+    "feed_forward_dim": 192,
+    "dropout": 0.1
+  },
+  "target_ratio": 0.3,
+  "relation_weight": 0.1,
+  "relation_temperature": 0.5,
+  "kd_warmup_epochs": 10,
+  "kd_ramp_epochs": 20,
+  "lr_factor": 0.5,
+  "lr_patience": 12,
+  "min_lr": 1e-05,
+  "lr": 0.001,
+  "weight_decay": 0.0005,
+  "kd_sample_ratio": 0.5
+}
